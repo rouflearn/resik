@@ -1,0 +1,1189 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Resik Jasa Kebersihan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Gabarito:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: phone-first single column; on wide screens the booking form sits beside a sticky receipt ("struk") that totals the order as it is built. */
+:root{
+  --bg:#F2F6F4; --surface:#FFFFFF; --surface-2:#E7EEEA; --ink:#10221D; --muted:#55675F; --line:#D6E1DC;
+  --pine:#155B47; --pine-ink:#FFFFFF; --pine-soft:#DCECE5;
+  --sponge:#F5C842; --sponge-ink:#3A2D00;
+  --ok:#1E7A4C; --ok-soft:#DDF1E5; --warn:#8F5A00; --warn-soft:#FBEED2; --info:#1D5C98; --info-soft:#E0EBF7;
+  --busy:#62469A; --busy-soft:#ECE5F7; --bad:#B0372F; --bad-soft:#F8E0DD;
+  --mark:#F5C842;
+  --scrim:rgb(9 22 18 / .5);
+  --shadow-sm:0 1px 2px rgb(16 34 29 / .08);
+  --shadow:0 2px 4px rgb(16 34 29 / .06), 0 10px 28px rgb(16 34 29 / .10);
+  --drop:rgb(16 34 29 / .10);
+
+  --font-display:"Gabarito", "Figtree", system-ui, sans-serif;
+  --font-body:"Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --r-sm:10px; --r-md:14px; --r-lg:20px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1512; --surface:#131F1B; --surface-2:#1A2924; --ink:#E5EEEA; --muted:#93A69E; --line:#25362F;
+    --pine:#5DC9A3; --pine-ink:#05201A; --pine-soft:#173A30;
+    --sponge:#F2C94C; --sponge-ink:#2B2100;
+    --ok:#6DD49B; --ok-soft:#163626; --warn:#F0B44C; --warn-soft:#382A11; --info:#82B7EC; --info-soft:#152739;
+    --busy:#BBA3EA; --busy-soft:#28213D; --bad:#F28B81; --bad-soft:#3B1C19;
+    --mark:#5C4C12;
+    --scrim:rgb(0 0 0 / .6);
+    --shadow-sm:0 1px 2px rgb(0 0 0 / .4);
+    --shadow:0 2px 4px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .35);
+    --drop:rgb(0 0 0 / .45);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1512; --surface:#131F1B; --surface-2:#1A2924; --ink:#E5EEEA; --muted:#93A69E; --line:#25362F;
+  --pine:#5DC9A3; --pine-ink:#05201A; --pine-soft:#173A30;
+  --sponge:#F2C94C; --sponge-ink:#2B2100;
+  --ok:#6DD49B; --ok-soft:#163626; --warn:#F0B44C; --warn-soft:#382A11; --info:#82B7EC; --info-soft:#152739;
+  --busy:#BBA3EA; --busy-soft:#28213D; --bad:#F28B81; --bad-soft:#3B1C19;
+  --mark:#5C4C12;
+  --scrim:rgb(0 0 0 / .6);
+  --shadow-sm:0 1px 2px rgb(0 0 0 / .4);
+  --shadow:0 2px 4px rgb(0 0 0 / .3), 0 10px 28px rgb(0 0 0 / .35);
+  --drop:rgb(0 0 0 / .45);
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance}
+button{font:inherit}
+:focus-visible{outline:2.5px solid var(--pine);outline-offset:2px}
+.wrap{max-width:1100px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ic.sm{width:16px;height:16px}
+.muted{color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;padding-block:10px}
+.brand{font-family:var(--font-display);font-weight:800;font-size:27px;letter-spacing:-.03em;color:var(--pine);text-decoration:none;display:inline-flex;align-items:flex-start;line-height:1;padding-block:4px}
+.brand .ic{width:13px;height:13px;fill:var(--sponge);stroke:none;margin-left:2px}
+.tabs{display:flex;gap:2px;background:var(--surface-2);padding:4px;border-radius:999px;min-width:0}
+.tab{appearance:none;border:0;background:transparent;color:var(--muted);font-weight:600;font-size:14px;line-height:1;padding:9px 14px;border-radius:999px;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow-sm)}
+.badge{min-width:19px;height:19px;padding:0 6px;border-radius:999px;background:var(--pine);color:var(--pine-ink);font-size:11.5px;font-weight:700;display:inline-grid;place-items:center;font-variant-numeric:tabular-nums}
+.badge.alt{background:var(--sponge);color:var(--sponge-ink)}
+@media (max-width:560px){
+  .top-inner{flex-direction:column;align-items:stretch;gap:8px}
+  .brand{align-self:flex-start}
+  .tabs{width:100%}
+  .tab{flex:1;padding-inline:8px}
+}
+
+.notice{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--warn);background:var(--warn-soft);border-radius:var(--r-sm);padding:10px 12px;margin-top:14px}
+.notice .ic{margin-top:1px}
+
+/* Hero */
+.hero{padding-block:28px 6px;display:grid;gap:12px}
+.eyebrow{font-weight:600;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--pine)}
+.hero h1,.page-h h1{font-family:var(--font-display);font-weight:800;letter-spacing:-.025em;line-height:1.04}
+.hero h1{font-size:clamp(30px,5.4vw,48px);max-width:18ch}
+.hero h1 mark{background:linear-gradient(transparent 60%, var(--mark) 60% 90%, transparent 90%);color:inherit;padding:0 .06em}
+.facts{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted)}
+.facts li{display:flex;align-items:center;gap:7px}
+.facts .ic{color:var(--pine)}
+
+/* Booking layout */
+.layout{display:grid;gap:28px;padding-block:22px 40px}
+@media (min-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr) 340px;align-items:start;gap:36px}
+  .aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
+}
+#booking{display:grid;gap:34px;min-width:0}
+.block{display:grid;gap:14px;min-width:0}
+.block > *{min-width:0}
+.block-h{font-family:var(--font-display);font-weight:700;font-size:21px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+.step{width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 14px/28px var(--font-body);text-align:center;font-variant-numeric:tabular-nums;flex:none}
+.mini-h{font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+/* Service cards */
+.services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:640px){.services{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.svc{appearance:none;text-align:left;color:inherit;background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r-md);padding:14px;display:grid;gap:6px;align-content:start;cursor:pointer;position:relative;transition:border-color .15s, background-color .15s}
+.svc:hover{border-color:var(--pine)}
+.svc[aria-pressed="true"]{border-color:var(--pine);box-shadow:inset 0 0 0 1px var(--pine);background:var(--pine-soft)}
+.svc .ico{width:42px;height:42px;border-radius:12px;background:var(--pine-soft);color:var(--pine);display:grid;place-items:center;margin-bottom:4px}
+.svc .ico .ic{width:24px;height:24px}
+.svc[aria-pressed="true"] .ico{background:var(--pine);color:var(--pine-ink)}
+.svc-name{font-family:var(--font-display);font-weight:700;font-size:16.5px;line-height:1.2}
+.svc-desc{font-size:13px;color:var(--muted);line-height:1.4}
+.svc-price{font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.svc-price span{color:var(--muted);font-weight:500}
+.svc .tick{position:absolute;top:10px;right:10px;width:24px;height:24px;border-radius:50%;background:var(--sponge);color:var(--sponge-ink);display:grid;place-items:center;opacity:0;transform:scale(.5);transition:opacity .15s, transform .15s}
+.svc .tick .ic{stroke-width:2.5}
+.svc[aria-pressed="true"] .tick{opacity:1;transform:none}
+
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px;display:grid;gap:20px}
+.detail-head{display:grid;gap:4px}
+.detail-head h3{font-family:var(--font-display);font-size:19px;font-weight:700}
+.detail-head p{color:var(--muted);font-size:14px;max-width:62ch}
+.includes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:6px 18px}
+.includes li{display:flex;gap:8px;font-size:14px;align-items:flex-start}
+.includes .ic{color:var(--pine);width:17px;height:17px;margin-top:2px;stroke-width:2.2}
+.qty-row{display:flex;flex-wrap:wrap;gap:18px 32px}
+.qty-row > div{display:grid;gap:6px;align-content:start;min-width:0}
+.field-label{font-weight:600;font-size:14px}
+.stepper-line{display:flex;align-items:center;gap:10px}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;background:var(--bg)}
+.stepper button{appearance:none;width:42px;height:42px;border:0;background:transparent;color:var(--ink);border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.stepper button:hover:not(:disabled){background:var(--surface-2)}
+.stepper button:disabled{opacity:.3;cursor:not-allowed}
+.stepper input{width:58px;text-align:center;border:0;background:transparent;font:700 18px/1 var(--font-body);color:var(--ink);font-variant-numeric:tabular-nums;-moz-appearance:textfield;appearance:textfield;padding:0}
+.stepper input::-webkit-inner-spin-button,.stepper input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.stepper input:focus{outline:none}
+.stepper:focus-within{border-color:var(--pine)}
+.unit{font-size:14px;color:var(--muted)}
+.hint{font-size:13px;color:var(--muted)}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font-weight:500;font-size:14px;line-height:1.2;padding:9px 14px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;font-variant-numeric:tabular-nums}
+.chip:hover:not(:disabled){border-color:var(--pine)}
+.chip[aria-pressed="true"]{background:var(--sponge);border-color:var(--sponge);color:var(--sponge-ink);font-weight:600}
+.chip .price{color:var(--muted);font-size:13px}
+.chip[aria-pressed="true"] .price{color:inherit;opacity:.8}
+.chip.sm{padding:6px 11px;font-size:13px}
+.chip:disabled{opacity:.4;cursor:not-allowed;text-decoration:line-through}
+
+/* Dates */
+.dates{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;margin:-2px -2px 0;scroll-snap-type:x proximity;scrollbar-width:thin}
+.date{appearance:none;flex:none;width:70px;padding:10px 0 9px;border-radius:var(--r-md);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);display:grid;justify-items:center;gap:1px;cursor:pointer;scroll-snap-align:start}
+.date:hover{border-color:var(--pine)}
+.date .dw{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
+.date .dd{font-family:var(--font-display);font-size:23px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.date .dm{font-size:12px;color:var(--muted)}
+.date[aria-pressed="true"]{background:var(--sponge);border-color:var(--sponge);color:var(--sponge-ink)}
+.date[aria-pressed="true"] .dw,.date[aria-pressed="true"] .dm{color:inherit;opacity:.8}
+
+/* Fields */
+.fields{display:grid;gap:14px}
+@media (min-width:640px){.fields.two{grid-template-columns:1fr 1fr}.fields .full{grid-column:1/-1}}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font-weight:600;font-size:14px}
+.field label span{font-weight:400;color:var(--muted)}
+.input{width:100%;font:16px/1.4 var(--font-body);color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:11px 12px}
+.input::placeholder{color:var(--muted);opacity:.75}
+.input:focus{outline:none;border-color:var(--pine);box-shadow:0 0 0 3px var(--pine-soft)}
+.input[aria-invalid="true"]{border-color:var(--bad)}
+.input.sm{padding:8px 10px;font-size:15px}
+textarea.input{resize:vertical;min-height:80px}
+.err{font-size:13px;color:var(--bad)}
+
+/* Payment */
+.pays{display:grid;gap:8px}
+@media (min-width:640px){.pays{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pay{appearance:none;text-align:left;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:var(--r-md);padding:12px 14px;display:grid;gap:2px;cursor:pointer}
+.pay:hover{border-color:var(--pine)}
+.pay b{font-weight:700;font-size:15px}
+.pay span{font-size:13px;color:var(--muted)}
+.pay[aria-pressed="true"]{background:var(--sponge);border-color:var(--sponge);color:var(--sponge-ink)}
+.pay[aria-pressed="true"] span{color:inherit;opacity:.8}
+
+/* Receipt */
+.receipt-wrap{filter:drop-shadow(0 8px 16px var(--drop))}
+.receipt{background:var(--surface);border-radius:var(--r-md) var(--r-md) 0 0;padding:20px 20px 32px;font-family:var(--font-mono);font-size:13px;line-height:1.5;display:grid;gap:12px;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50% / 14px 100%;
+  mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50% / 14px 100%}
+.r-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding-bottom:10px;border-bottom:1.5px dashed var(--line)}
+.r-brand{font-family:var(--font-display);font-weight:800;font-size:21px;color:var(--pine);letter-spacing:-.03em}
+.r-head small{color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px}
+.r-rows{display:grid;gap:8px}
+.r-line{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.r-l{min-width:0}
+.r-r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.r-l b{font-weight:500}
+.r-sub{color:var(--muted)}
+.r-sep{border-top:1.5px dashed var(--line)}
+.r-total{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding-top:10px;border-top:1.5px dashed var(--line);text-transform:uppercase;letter-spacing:.06em}
+.r-total strong{font-family:var(--font-display);font-size:27px;font-weight:800;letter-spacing:-.02em;text-transform:none;font-variant-numeric:tabular-nums}
+.r-note{font-family:var(--font-body);font-size:12.5px;color:var(--muted);line-height:1.45}
+
+/* Buttons */
+.btn{appearance:none;border:1.5px solid transparent;font-family:var(--font-body);font-weight:700;font-size:15px;line-height:1;padding:13px 20px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;white-space:nowrap}
+.btn.primary{background:var(--pine);color:var(--pine-ink)}
+.btn.primary:hover:not(:disabled){filter:brightness(1.1)}
+.btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn.ghost:hover:not(:disabled){border-color:var(--ink)}
+.btn.danger{background:transparent;border-color:var(--bad);color:var(--bad)}
+.btn.danger:hover:not(:disabled){background:var(--bad-soft)}
+.btn.sm{padding:9px 14px;font-size:14px}
+.btn.block{width:100%}
+.btn:disabled{opacity:.55;cursor:progress}
+
+/* Mobile order bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 20px var(--drop);
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  display:flex;align-items:center;justify-content:space-between;gap:12px}
+.m-total{display:grid;line-height:1.15}
+.m-total small{color:var(--muted);font-size:12px}
+.m-total strong{font-family:var(--font-display);font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}
+#view-pesan{padding-bottom:80px}
+@media (min-width:900px){.mbar{display:none}#view-pesan{padding-bottom:0}}
+
+/* Pages: my orders & admin */
+.page-h{padding-block:28px 6px;display:grid;gap:6px}
+.page-h h1{font-size:clamp(28px,4.4vw,38px)}
+.page-h p{color:var(--muted);max-width:60ch}
+.page-body{display:grid;gap:16px;padding-block:18px 48px}
+.orders{display:grid;gap:12px}
+@media (min-width:900px){.orders.cols{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
+.ocard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px;display:grid;gap:12px;min-width:0}
+.o-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.code{font-family:var(--font-mono);font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+.o-title{font-family:var(--font-display);font-size:18px;font-weight:700;line-height:1.2}
+.o-sub{font-size:14px;color:var(--muted)}
+.meta{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:14px}
+.meta li{display:flex;gap:8px;align-items:flex-start;min-width:0;overflow-wrap:anywhere}
+.meta .ic{color:var(--muted);margin-top:3px}
+.o-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:12px;border-top:1px solid var(--line)}
+.o-total{font-family:var(--font-display);font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
+.o-pay{font-size:13.5px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12px;line-height:1;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.s-wait{background:var(--warn-soft);color:var(--warn)}
+.s-conf{background:var(--info-soft);color:var(--info)}
+.s-busy{background:var(--busy-soft);color:var(--busy)}
+.s-done{background:var(--ok-soft);color:var(--ok)}
+.s-bad{background:var(--bad-soft);color:var(--bad)}
+.late{font-size:12px;font-weight:700;color:var(--bad)}
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.track span{height:5px;border-radius:3px;background:var(--line)}
+.track span.on{background:var(--pine)}
+.track-labels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;font-size:11.5px;color:var(--muted);margin-top:-6px}
+.track-labels .on{color:var(--ink);font-weight:700}
+.confirm{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;font-weight:600}
+.empty{background:var(--surface);border:1.5px dashed var(--line);border-radius:var(--r-lg);padding:32px 20px;text-align:center;display:grid;gap:10px;justify-items:center}
+.empty h2{font-family:var(--font-display);font-size:20px;font-weight:700}
+.empty p{color:var(--muted);max-width:44ch;font-size:14px}
+.empty .ico{width:52px;height:52px;border-radius:16px;background:var(--pine-soft);color:var(--pine);display:grid;place-items:center}
+.empty .ico .ic{width:26px;height:26px}
+
+/* Admin */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:12px 14px;display:grid;gap:2px;min-width:0}
+.stat b{font-family:var(--font-display);font-size:26px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.wide{grid-column:1/-1}
+@media (min-width:640px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat.wide{grid-column:auto}}
+.day-h{font-family:var(--font-display);font-size:18px;font-weight:700;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-top:6px}
+.day-h small{font-family:var(--font-body);font-size:13px;color:var(--muted);font-weight:500}
+.a-top{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 14px;align-items:start}
+.a-time{font-family:var(--font-mono);font-weight:500;font-size:15px;background:var(--surface-2);border-radius:8px;padding:6px 8px;line-height:1}
+@media (max-width:480px){.a-top{grid-template-columns:auto minmax(0,1fr)}.a-top .pill{grid-column:1/-1;justify-self:start}}
+.a-who{display:grid;gap:6px;font-size:14px;background:var(--bg);border-radius:var(--r-sm);padding:12px}
+.a-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;min-width:0;overflow-wrap:anywhere}
+.a-row .ic{color:var(--muted);margin-top:2px}
+.a-name{font-weight:700}
+.sel{user-select:all;font-variant-numeric:tabular-nums}
+.a-wa{margin-left:auto;font-size:13px;font-weight:700;color:var(--pine);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.a-wa:hover{text-decoration:underline}
+.a-notes{font-size:13.5px;color:var(--muted)}
+.a-staff{display:grid;gap:6px}
+.a-staff label{font-size:13px;font-weight:600}
+.a-actions{display:flex;flex-wrap:wrap;gap:8px}
+
+/* Success overlay */
+.overlay{position:fixed;inset:0;z-index:40;background:var(--scrim);display:grid;place-items:center;
+  padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.ok-panel{background:var(--surface);border-radius:var(--r-lg);padding:26px 22px 22px;width:100%;max-width:420px;display:grid;gap:14px;text-align:center;box-shadow:var(--shadow);max-height:100%;overflow:auto}
+.ok-badge{width:60px;height:60px;border-radius:50%;background:var(--sponge);color:var(--sponge-ink);display:grid;place-items:center;justify-self:center}
+.ok-badge .ic{width:30px;height:30px;stroke-width:2.6}
+.ok-panel h2{font-family:var(--font-display);font-size:25px;font-weight:800;letter-spacing:-.02em}
+.ok-code{font-family:var(--font-mono);font-size:15px;background:var(--surface-2);padding:8px 12px;border-radius:8px;justify-self:center;user-select:all}
+.ok-lines{text-align:left;font-size:14px;display:grid;gap:4px;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);padding-block:12px}
+.ok-lines div{display:flex;justify-content:space-between;gap:12px}
+.ok-lines span:first-child{color:var(--muted)}
+.ok-lines span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.ok-note{font-size:13.5px;color:var(--muted)}
+.ok-actions{display:grid;gap:8px}
+
+.toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;background:var(--ink);color:var(--bg);padding:11px 16px;border-radius:12px;font-weight:600;font-size:14px;max-width:calc(100% - 32px);width:max-content;box-shadow:var(--shadow);text-align:center}
+@media (min-width:900px){.toast{bottom:calc(28px + env(safe-area-inset-bottom,0px))}}
+
+.foot{padding-block:8px 32px;font-size:13px;color:var(--muted)}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></symbol>
+  <symbol id="i-spray" viewBox="0 0 24 24"><path d="M8.5 11 10 8h4l1.5 3v9.5h-7z"/><path d="M10.5 8V5h3.5l2 1.5"/><path d="M19 4.5h.01M20 7.5h.01M21.5 5.5h.01"/><path d="M8.5 14h7"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M5.5 11V8a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v3"/><path d="M3.5 12a1.5 1.5 0 0 1 3 0v2h11v-2a1.5 1.5 0 0 1 3 0v5h-17z"/><path d="M5.5 17v2M18.5 17v2"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18.5V6.5"/><path d="M3 14h18v4.5"/><path d="M21 14v-1.5A3.5 3.5 0 0 0 17.5 9H11v5"/><circle cx="7" cy="11" r="1.7"/></symbol>
+  <symbol id="i-rug" viewBox="0 0 24 24"><rect x="6" y="5" width="12" height="14" rx="1"/><path d="M8 5V3M10.7 5V3M13.3 5V3M16 5V3M8 21v-2M10.7 21v-2M13.3 21v-2M16 21v-2"/><path d="M9 9.5h6M9 12h6M9 14.5h6"/></symbol>
+  <symbol id="i-roller" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="13" height="5" rx="1.2"/><path d="M16.5 6h3v5.5H11V14"/><rect x="9.5" y="14" width="3" height="7" rx="1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.4-3.9A8 8 0 1 1 8.2 19z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.5 3.6-5.5 7-5.5s6.2 2 7 5.5"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2c.7 5 3 7.3 8 8-5 .7-7.3 3-8 8-.7-5-3-7.3-8-8 5-.7 7.3-3 8-8z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19H3.5z"/><path d="M3.5 13.5H9l1 2h4l1-2h5.5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><path d="M4.5 6.5h.01M4.5 12h.01M4.5 17.5h.01"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="#pesan" data-nav="pesan" aria-label="Resik, ke halaman pesan">resik<svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></a>
+    <nav class="tabs" role="tablist" aria-label="Halaman">
+      <button class="tab" role="tab" id="tab-pesan" data-nav="pesan" aria-selected="true" aria-controls="view-pesan">Pesan</button>
+      <button class="tab" role="tab" id="tab-pesanan" data-nav="pesanan" aria-selected="false" aria-controls="view-pesanan">Pesanan saya <span class="badge" id="my-count" hidden></span></button>
+      <button class="tab" role="tab" id="tab-admin" data-nav="admin" aria-selected="false" aria-controls="view-admin" hidden>Admin <span class="badge alt" id="adm-count" hidden></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap"><div class="notice" id="mode-note" role="status" hidden><svg class="ic sm" aria-hidden="true"><use href="#i-info"/></svg><span id="mode-text"></span></div></div>
+
+<main>
+  <!-- PESAN -->
+  <section id="view-pesan" role="tabpanel" aria-labelledby="tab-pesan">
+    <div class="wrap hero">
+      <p class="eyebrow">Jasa kebersihan rumah &amp; kantor</p>
+      <h1>Pesan petugas kebersihan, <mark>bayar setelah bersih.</mark></h1>
+      <ul class="facts">
+        <li><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg>Alat &amp; cairan pembersih dibawa petugas</li>
+        <li><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg>Jadwal setiap hari, 08.00–17.00</li>
+        <li><svg class="ic sm" aria-hidden="true"><use href="#i-check"/></svg>Konfirmasi lewat WhatsApp</li>
+      </ul>
+    </div>
+
+    <div class="wrap layout">
+      <form id="booking" novalidate>
+        <section class="block" aria-labelledby="h-layanan">
+          <h2 class="block-h" id="h-layanan"><span class="step">1</span>Pilih layanan</h2>
+          <div class="services" id="services" role="group" aria-label="Jenis layanan"></div>
+          <div class="detail" id="svc-detail"></div>
+        </section>
+
+        <section class="block" aria-labelledby="h-jadwal">
+          <h2 class="block-h" id="h-jadwal"><span class="step">2</span>Jadwal</h2>
+          <div>
+            <p class="mini-h">Tanggal</p>
+            <div class="dates" id="dates" role="group" aria-label="Tanggal"></div>
+          </div>
+          <div>
+            <p class="mini-h">Jam mulai</p>
+            <div class="chips" id="slots" role="group" aria-label="Jam mulai"></div>
+            <p class="err" id="e-time" hidden></p>
+            <p class="hint" style="margin-top:8px">Untuk hari ini, pesan paling lambat 3 jam sebelum jam mulai.</p>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-data">
+          <h2 class="block-h" id="h-data"><span class="step">3</span>Alamat &amp; kontak</h2>
+          <div class="fields two">
+            <div class="field">
+              <label for="f-name">Nama</label>
+              <input class="input" id="f-name" name="name" autocomplete="name" placeholder="Nama Anda">
+              <p class="err" id="e-name" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Nomor WhatsApp</label>
+              <input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0812 3456 7890">
+              <p class="err" id="e-phone" hidden></p>
+            </div>
+            <div class="field full">
+              <label for="f-address">Alamat lengkap</label>
+              <textarea class="input" id="f-address" name="address" autocomplete="street-address" rows="3" placeholder="Jl. Kenanga No. 12, RT 03/RW 05, Kel. Tebet Timur, Jakarta Selatan"></textarea>
+              <p class="err" id="e-address" hidden></p>
+            </div>
+            <div class="field full">
+              <label for="f-notes">Catatan untuk petugas <span>(opsional)</span></label>
+              <textarea class="input" id="f-notes" name="notes" rows="2" placeholder="Contoh: ada kucing di rumah, parkir motor di depan pagar hijau"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="h-bayar">
+          <h2 class="block-h" id="h-bayar"><span class="step">4</span>Pembayaran</h2>
+          <div class="pays" id="pays" role="group" aria-label="Metode pembayaran"></div>
+        </section>
+      </form>
+
+      <aside class="aside" aria-label="Ringkasan pesanan">
+        <div class="receipt-wrap">
+          <div class="receipt">
+            <div class="r-head"><span class="r-brand">resik</span><small>Ringkasan pesanan</small></div>
+            <div class="r-rows" id="r-rows"></div>
+            <div class="r-total"><span>Total</span><strong id="r-total">Rp 0</strong></div>
+            <button class="btn primary block" type="submit" form="booking" id="submit-main">Pesan sekarang</button>
+            <p class="r-note">Tidak ada pembayaran sekarang. Anda membayar setelah pekerjaan selesai.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PESANAN SAYA -->
+  <section id="view-pesanan" role="tabpanel" aria-labelledby="tab-pesanan" hidden>
+    <div class="wrap page-h">
+      <h1>Pesanan saya</h1>
+      <p>Status pesanan berubah otomatis saat kami mengonfirmasi dan mengerjakannya.</p>
+    </div>
+    <div class="wrap page-body"><div class="orders cols" id="mine-list"></div></div>
+  </section>
+
+  <!-- ADMIN -->
+  <section id="view-admin" role="tabpanel" aria-labelledby="tab-admin" hidden>
+    <div class="wrap page-h">
+      <h1>Pesanan masuk</h1>
+      <p id="admin-sub">Konfirmasi pesanan, tugaskan petugas, dan perbarui status pekerjaan. Pesanan baru muncul di sini secara langsung.</p>
+    </div>
+    <div class="wrap page-body" id="admin-body"></div>
+  </section>
+</main>
+
+<footer class="wrap foot">Resik · Jasa kebersihan rumah dan kantor</footer>
+
+<div class="mbar" id="mbar">
+  <div class="m-total"><small>Total</small><strong id="m-total">Rp 0</strong></div>
+  <button class="btn primary" type="submit" form="booking" id="submit-bar">Pesan sekarang</button>
+</div>
+
+<div class="overlay" id="ok" hidden>
+  <div class="ok-panel" role="dialog" aria-modal="true" aria-labelledby="ok-title">
+    <div class="ok-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+    <h2 id="ok-title">Pesanan terkirim</h2>
+    <div class="ok-code" id="ok-code"></div>
+    <div class="ok-lines" id="ok-lines"></div>
+    <p class="ok-note" id="ok-note"></p>
+    <div class="ok-actions">
+      <button class="btn primary block" type="button" id="ok-mine">Lihat status pesanan</button>
+      <button class="btn ghost block" type="button" id="ok-close">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- Data layanan ---------- */
+const SERVICES = [
+  { id:'rutin', name:'Bersih Rutin', icon:'home', short:'Sapu, pel, lap debu, kamar mandi, dan dapur.',
+    desc:'Pembersihan harian untuk rumah, apartemen, atau kantor kecil. Harga dihitung per jam untuk tiap petugas.',
+    price:75000, priceUnit:'jam', unit:'jam', qtyLabel:'Durasi', min:2, max:8, step:1, def:3, workers:true,
+    hint:'Rumah tipe 36 biasanya selesai dalam 3 jam oleh 1 petugas.',
+    includes:['Sapu & pel semua lantai','Lap debu perabot dan kaca bagian dalam','Bersihkan kamar mandi & toilet','Rapikan tempat tidur','Cuci piring & lap meja dapur'] },
+  { id:'deep', name:'Deep Cleaning', icon:'spray', short:'Sampai kerak, noda minyak, dan kolong perabot.',
+    desc:'Pembersihan menyeluruh untuk rumah yang lama tidak dibersihkan, mau ditempati, atau sebelum acara.',
+    price:15000, priceUnit:'m²', unit:'m²', qtyLabel:'Luas bangunan', min:30, max:400, step:10, def:36,
+    hint:'Rumah tipe 36 berarti luas bangunan sekitar 36 m².',
+    quick:[{l:'Tipe 36',v:36},{l:'Tipe 45',v:45},{l:'Tipe 54',v:54},{l:'Tipe 70',v:70},{l:'Tipe 90',v:90}],
+    includes:['Gosok kerak kamar mandi & nat keramik','Hilangkan minyak di kompor & dinding dapur','Bersihkan kolong dan balik perabot','Lap kusen, pintu, dan saklar','Vakum karpet & sudut ruangan'] },
+  { id:'sofa', name:'Cuci Sofa', icon:'sofa', short:'Vakum tungau lalu cuci dengan mesin ekstraksi.',
+    desc:'Sofa kain dicuci di tempat. Dihitung per dudukan; sofa sudut L umumnya 5 dudukan.',
+    price:60000, priceUnit:'dudukan', unit:'dudukan', qtyLabel:'Jumlah dudukan', min:2, max:15, step:1, def:3,
+    quick:[{l:'2 dudukan',v:2},{l:'3 dudukan',v:3},{l:'Sudut L',v:5}],
+    includes:['Vakum tungau & debu','Cuci dengan mesin ekstraksi','Angkat noda ringan','Kering dalam 4–6 jam'] },
+  { id:'kasur', name:'Cuci Kasur', icon:'bed', short:'Angkat tungau, noda, dan bau apek.',
+    desc:'Kasur pegas atau busa dicuci di tempat tanpa dibawa keluar rumah.',
+    price:180000, priceUnit:'kasur', unit:'kasur', qtyLabel:'Jumlah kasur', min:1, max:6, step:1, def:1,
+    hint:'Harga sama untuk ukuran single sampai king.',
+    includes:['Vakum tungau & sel kulit mati','Cuci noda dan hilangkan bau','Sinar UV anti bakteri','Kering dalam 6–8 jam'] },
+  { id:'karpet', name:'Cuci Karpet', icon:'rug', short:'Shampoo, sikat mesin, lalu ekstraksi air.',
+    desc:'Karpet dicuci di tempat. Ukur panjang × lebar untuk mendapat luasnya.',
+    price:25000, priceUnit:'m²', unit:'m²', qtyLabel:'Luas karpet', min:4, max:60, step:1, def:6,
+    quick:[{l:'2 × 3 m',v:6},{l:'3 × 4 m',v:12},{l:'4 × 5 m',v:20}],
+    includes:['Vakum dua sisi','Shampoo & sikat mesin','Bilas dan sedot air','Kering dalam 6–12 jam'] },
+  { id:'renovasi', name:'Pasca Renovasi', icon:'roller', short:'Debu semen, sisa cat, dan lem di lantai.',
+    desc:'Untuk rumah atau ruko yang baru selesai dibangun atau direnovasi, sebelum perabot masuk.',
+    price:20000, priceUnit:'m²', unit:'m²', qtyLabel:'Luas bangunan', min:30, max:400, step:10, def:45,
+    quick:[{l:'Tipe 36',v:36},{l:'Tipe 45',v:45},{l:'Tipe 54',v:54},{l:'Tipe 70',v:70},{l:'Tipe 90',v:90}],
+    includes:['Angkat debu semen & pasir','Kerok sisa cat dan lem di lantai','Bersihkan noda cat di kaca','Pel akhir seluruh ruangan'] },
+];
+const ADDONS = [
+  { id:'setrika', name:'Setrika pakaian 1 jam', price:50000, for:['rutin'] },
+  { id:'kulkas', name:'Bersihkan kulkas', price:45000, for:['rutin','deep'] },
+  { id:'jendela', name:'Kaca jendela luar', price:50000, for:['rutin','deep','renovasi'] },
+  { id:'disinfeksi', name:'Disinfeksi ruangan', price:75000, for:['rutin','deep','renovasi'] },
+  { id:'tungau', name:'Semprot anti tungau', price:35000, for:['sofa','kasur','karpet'] },
+];
+const PAYMENTS = [
+  { id:'tunai', name:'Tunai', note:'Bayar ke petugas setelah selesai' },
+  { id:'transfer', name:'Transfer bank', note:'Nomor rekening dikirim saat konfirmasi' },
+  { id:'qris', name:'QRIS', note:'Pindai kode QR dari petugas' },
+];
+const SLOTS = ['08.00','10.00','13.00','15.00'];
+const STATUS = {
+  menunggu:{ label:'Menunggu konfirmasi', cls:'s-wait' },
+  dikonfirmasi:{ label:'Dikonfirmasi', cls:'s-conf' },
+  dikerjakan:{ label:'Sedang dikerjakan', cls:'s-busy' },
+  selesai:{ label:'Selesai', cls:'s-done' },
+  batal:{ label:'Dibatalkan', cls:'s-bad' },
+};
+const FLOW = ['menunggu','dikonfirmasi','dikerjakan','selesai'];
+const ACTIVE = ['menunggu','dikonfirmasi','dikerjakan'];
+const LS_ORDERS = 'resik.orders.v1', LS_CONTACT = 'resik.contact.v1';
+
+/* ---------- Utilitas ---------- */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const NF = (() => { try { return new Intl.NumberFormat('id-ID'); } catch (e) { return null; } })();
+const rp = n => 'Rp ' + (NF ? NF.format(Math.round(n || 0)) : String(Math.round(n || 0)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const icon = (n, cls) => `<svg class="ic${cls ? ' ' + cls : ''}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const DAYS = ['Min','Sen','Sel','Rab','Kam','Jum','Sab'];
+const DAYS_L = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+const MON = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+const MON_L = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const pad = n => String(n).padStart(2, '0');
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+function parseYmd(s){ const p = String(s || '').split('-').map(Number); return (p.length === 3 && p.every(n => !isNaN(n))) ? new Date(p[0], p[1] - 1, p[2]) : null; }
+function fmtDate(s){ const d = parseYmd(s); return d ? `${DAYS_L[d.getDay()]}, ${d.getDate()} ${MON_L[d.getMonth()]}` : '—'; }
+function fmtDateShort(s){ const d = parseYmd(s); return d ? `${DAYS[d.getDay()]}, ${d.getDate()} ${MON[d.getMonth()]}` : '—'; }
+function relDay(s){
+  const now = new Date();
+  if (s === ymd(now)) return 'Hari ini';
+  if (s === ymd(addDays(now, 1))) return 'Besok';
+  if (s === ymd(addDays(now, -1))) return 'Kemarin';
+  return '';
+}
+function slotOpen(date, slot){
+  const now = new Date(), today = ymd(now);
+  if (date > today) return true;
+  if (date < today) return false;
+  return parseInt(slot, 10) >= now.getHours() + 3;
+}
+const svcById = id => SERVICES.find(s => s.id === id) || SERVICES[0];
+const addonById = id => ADDONS.find(a => a.id === id);
+const payName = id => (PAYMENTS.find(p => p.id === id) || PAYMENTS[0]).name;
+function qtyText(s, qty, workers){ return s.workers ? `${workers} petugas × ${qty} jam` : `${qty} ${s.unit}`; }
+function lsGet(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
+function lsSet(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+let toastTimer = null;
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 3200);
+}
+
+/* ---------- State formulir ---------- */
+const saved = lsGet(LS_CONTACT, {}) || {};
+const form = {
+  svc:'rutin', qty:3, workers:1, addons:new Set(), date:null, time:'10.00',
+  name: saved.name || '', phone: saved.phone || '', address: saved.address || '', notes:'', pay:'tunai'
+};
+const UI = { view:'pesan', confirm:null, filter:'aktif', adminDirty:false };
+
+/* ---------- Penyimpanan: db bersama, atau demo lokal ---------- */
+const S = { mode:'loading', db:null, uid:null, admin:false, mine:[], all:[], mineReady:false, allReady:false, unsubs:[] };
+
+function goLocal(){
+  S.unsubs.forEach(u => { try { u(); } catch (e) {} });
+  S.unsubs = []; S.mode = 'local'; S.db = null; S.admin = true;
+  const list = lsGet(LS_ORDERS, []);
+  S.all = Array.isArray(list) ? list : [];
+  S.mine = S.all; S.mineReady = S.allReady = true;
+  renderAllData();
+}
+function saveLocal(){ lsSet(LS_ORDERS, S.all); S.mine = S.all; }
+
+function flatten(docId, d){
+  const out = [];
+  if (d && d.orders && typeof d.orders === 'object') {
+    Object.keys(d.orders).forEach(k => { const o = d.orders[k]; if (o && o.code) out.push(Object.assign({}, o, { owner: docId })); });
+  }
+  return out;
+}
+function goLive(db, uid, admin){
+  S.mode = 'live'; S.db = db; S.uid = uid; S.admin = admin;
+  try {
+    S.unsubs.push(db.doc('bookings/' + uid).onSnapshot(snap => {
+      S.mine = snap.exists ? flatten(uid, snap.data()) : [];
+      S.mineReady = true; renderMine(); renderTabs();
+    }, err => { console.warn('db mine', err); if (!S.mineReady) goLocal(); }));
+    if (admin) {
+      S.unsubs.push(db.collection('bookings').onSnapshot(snap => {
+        let out = []; snap.docs.forEach(doc => { out = out.concat(flatten(doc.id, doc.data())); });
+        S.all = out; S.allReady = true; renderAdmin(); renderTabs();
+      }, err => { console.warn('db all', err); toast('Daftar pesanan tidak bisa dimuat. Muat ulang halaman.'); }));
+    }
+  } catch (e) { console.warn(e); goLocal(); return; }
+  renderAllData();
+}
+
+async function initStore(){
+  let db = null, user = null;
+  try {
+    if (window.claude && typeof window.claude.use === 'function') {
+      [db, user] = await Promise.all([
+        window.claude.use('db').catch(() => null),
+        window.claude.use('user').catch(() => null)
+      ]);
+    }
+  } catch (e) {}
+  if (db && user) {
+    let me = null, canWrite = null;
+    try { me = await user.me(); } catch (e) {}
+    try { canWrite = await user.can('data.write'); } catch (e) {}
+    if (me && me.id && canWrite !== false) { goLive(db, me.id, !!(me.canEdit || me.isOwner)); return; }
+  }
+  goLocal();
+}
+
+let chain = Promise.resolve();
+async function withRetry(fn){
+  try { return await fn(); }
+  catch (e) {
+    if (e && e.code === 'unavailable') { await new Promise(r => setTimeout(r, 500 + Math.random() * 700)); return fn(); }
+    throw e;
+  }
+}
+function queued(fn){ const run = () => withRetry(fn); const p = chain.then(run, run); chain = p.catch(() => {}); return p; }
+const FATAL = ['invalid_argument','not_granted','revoked','capability_disabled','capability_removed','transform_error'];
+function errMsg(e, saving){
+  const c = e && e.code;
+  if (c === 'quota_exceeded') return 'Penyimpanan pesanan sudah penuh. Hapus pesanan lama lalu coba lagi.';
+  if (c === 'resource_exhausted') return 'Terlalu banyak permintaan. Tunggu sebentar lalu coba lagi.';
+  if (c === 'invalid_argument') return 'Anda tidak punya izin mengubah pesanan ini.';
+  return saving ? 'Pesanan belum tersimpan. Periksa koneksi internet lalu coba lagi.' : 'Perubahan belum tersimpan. Periksa koneksi lalu coba lagi.';
+}
+
+async function createOrder(o){
+  await S.ready;
+  if (S.mode === 'live') {
+    try {
+      await queued(async () => {
+        const ref = S.db.doc('bookings/' + S.uid);
+        const snap = await ref.get();
+        const body = { orders: { [o.id]: o }, updatedAt: o.createdAt };
+        if (snap.exists) await ref.update(body); else await ref.set(body);
+      });
+      return 'live';
+    } catch (e) {
+      if (!(e && FATAL.includes(e.code))) throw e;
+      goLocal();
+    }
+  }
+  S.all.unshift(o); saveLocal(); renderAllData();
+  return 'local';
+}
+async function updateOrder(o, patch){
+  patch.updatedAt = new Date().toISOString();
+  if (S.mode === 'live') {
+    await queued(() => S.db.doc('bookings/' + o.owner).update({ orders: { [o.id]: patch } }));
+  } else {
+    const t = S.all.find(x => x.id === o.id);
+    if (t) Object.assign(t, patch);
+    saveLocal(); renderAllData();
+  }
+}
+
+/* ---------- Render: formulir pesan ---------- */
+function renderServices(){
+  $('#services').innerHTML = SERVICES.map(s => `
+    <button type="button" class="svc" data-svc="${s.id}" aria-pressed="${form.svc === s.id}">
+      <span class="ico">${icon(s.icon)}</span>
+      <span class="tick">${icon('check', 'sm')}</span>
+      <span class="svc-name">${s.name}</span>
+      <span class="svc-desc">${s.short}</span>
+      <span class="svc-price">${rp(s.price)} <span>/ ${s.priceUnit}</span></span>
+    </button>`).join('');
+}
+function stepper(id, value, min, max, label){
+  return `<div class="stepper">
+      <button type="button" data-step="-1" data-target="${id}" aria-label="Kurangi ${label}" ${value <= min ? 'disabled' : ''}>${icon('minus')}</button>
+      <input id="${id}" type="number" inputmode="numeric" min="${min}" max="${max}" step="1" value="${value}" aria-label="${label}">
+      <button type="button" data-step="1" data-target="${id}" aria-label="Tambah ${label}" ${value >= max ? 'disabled' : ''}>${icon('plus')}</button>
+    </div>`;
+}
+function renderDetail(){
+  const s = svcById(form.svc);
+  const adds = ADDONS.filter(a => a.for.includes(s.id));
+  $('#svc-detail').innerHTML = `
+    <div class="detail-head"><h3>${s.name}</h3><p>${s.desc}</p></div>
+    <div>
+      <p class="mini-h">Yang dikerjakan</p>
+      <ul class="includes">${s.includes.map(i => `<li>${icon('check')}<span>${i}</span></li>`).join('')}</ul>
+    </div>
+    <div class="qty-row">
+      <div>
+        <label class="field-label" for="qty">${s.qtyLabel}</label>
+        <div class="stepper-line">${stepper('qty', form.qty, s.min, s.max, s.qtyLabel.toLowerCase())}<span class="unit">${s.unit}</span></div>
+        <p class="hint">Minimal ${s.min} ${s.unit}${s.hint ? '. ' + s.hint : ''}</p>
+        ${s.quick ? `<div class="chips" id="quick" role="group" aria-label="Pilihan cepat">${s.quick.map(q => `<button type="button" class="chip sm" data-quick="${q.v}" aria-pressed="${form.qty === q.v}">${q.l}</button>`).join('')}</div>` : ''}
+      </div>
+      ${s.workers ? `<div>
+        <label class="field-label" for="workers">Jumlah petugas</label>
+        <div class="stepper-line">${stepper('workers', form.workers, 1, 4, 'jumlah petugas')}<span class="unit">orang</span></div>
+        <p class="hint">2 petugas menyelesaikan pekerjaan dua kali lebih cepat.</p>
+      </div>` : ''}
+    </div>
+    ${adds.length ? `<div>
+      <p class="mini-h">Tambahan <span style="text-transform:none;letter-spacing:0;font-weight:500">(opsional)</span></p>
+      <div class="chips" role="group" aria-label="Layanan tambahan">${adds.map(a => `<button type="button" class="chip" data-addon="${a.id}" aria-pressed="${form.addons.has(a.id)}">${a.name} <span class="price">+${rp(a.price)}</span></button>`).join('')}</div>
+    </div>` : ''}`;
+}
+function syncSteppers(){
+  const s = svcById(form.svc);
+  const lim = { qty:[s.min, s.max, form.qty], workers:[1, 4, form.workers] };
+  Object.keys(lim).forEach(id => {
+    const inp = document.getElementById(id); if (!inp) return;
+    const [mn, mx, v] = lim[id];
+    if (document.activeElement !== inp) inp.value = v;
+    $$(`[data-target="${id}"]`).forEach(b => { b.disabled = (+b.dataset.step < 0) ? v <= mn : v >= mx; });
+  });
+  $$('#quick [data-quick]').forEach(b => b.setAttribute('aria-pressed', +b.dataset.quick === form.qty));
+}
+function availableDates(){
+  const now = new Date(), out = [];
+  for (let i = 0; i < 14; i++) {
+    const s = ymd(addDays(now, i));
+    if (i === 0 && !SLOTS.some(t => slotOpen(s, t))) continue;
+    out.push(s);
+  }
+  return out;
+}
+function renderDates(){
+  const list = availableDates();
+  if (!form.date || !list.includes(form.date)) form.date = list.find(s => s !== ymd(new Date())) || list[0];
+  $('#dates').innerHTML = list.map(s => {
+    const d = parseYmd(s), rel = relDay(s);
+    return `<button type="button" class="date" data-date="${s}" aria-pressed="${form.date === s}" aria-label="${fmtDate(s)}">
+      <span class="dw">${rel || DAYS[d.getDay()]}</span><span class="dd">${d.getDate()}</span><span class="dm">${MON[d.getMonth()]}</span></button>`;
+  }).join('');
+}
+function renderSlots(){
+  if (form.time && !slotOpen(form.date, form.time)) form.time = null;
+  $('#slots').innerHTML = SLOTS.map(t => {
+    const open = slotOpen(form.date, t);
+    return `<button type="button" class="chip" data-slot="${t}" aria-pressed="${form.time === t}" ${open ? '' : 'disabled aria-label="' + t + ', sudah lewat"'}>${icon('clock', 'sm')}${t}</button>`;
+  }).join('');
+}
+function renderPays(){
+  $('#pays').innerHTML = PAYMENTS.map(p => `<button type="button" class="pay" data-pay="${p.id}" aria-pressed="${form.pay === p.id}"><b>${p.name}</b><span>${p.note}</span></button>`).join('');
+}
+function calc(){
+  const s = svcById(form.svc);
+  const base = s.price * form.qty * (s.workers ? form.workers : 1);
+  const adds = Array.from(form.addons).map(addonById).filter(Boolean);
+  return { s, base, adds, total: base + adds.reduce((a, b) => a + b.price, 0) };
+}
+function renderSummary(){
+  const { s, base, adds, total } = calc();
+  $('#r-rows').innerHTML = `
+    <div class="r-line"><span class="r-l"><b>${s.name}</b><br><span class="r-sub">${qtyText(s, form.qty, form.workers)}</span></span><span class="r-r">${rp(base)}</span></div>
+    ${adds.map(a => `<div class="r-line"><span class="r-l">+ ${a.name}</span><span class="r-r">${rp(a.price)}</span></div>`).join('')}
+    <div class="r-sep"></div>
+    <div class="r-line"><span class="r-l r-sub">Jadwal</span><span class="r-r">${fmtDateShort(form.date)}${form.time ? ' · ' + form.time : ''}</span></div>
+    <div class="r-line"><span class="r-l r-sub">Bayar</span><span class="r-r">${payName(form.pay)}</span></div>`;
+  $('#r-total').textContent = rp(total);
+  $('#m-total').textContent = rp(total);
+}
+function setPressed(sel, attr, val){ $$(sel).forEach(b => b.setAttribute('aria-pressed', b.getAttribute(attr) === String(val))); }
+
+function setQty(v){
+  const s = svcById(form.svc);
+  v = Math.round(Number(v));
+  if (!isFinite(v)) v = s.def;
+  form.qty = Math.min(s.max, Math.max(s.min, v));
+  syncSteppers(); renderSummary();
+}
+
+/* ---------- Validasi & kirim ---------- */
+function validate(){
+  const e = {};
+  if (!form.time) e.time = 'Pilih jam mulai.';
+  if (form.name.trim().length < 2) e.name = 'Tulis nama Anda.';
+  const digits = form.phone.replace(/\D/g, '');
+  if (digits.length < 9 || digits.length > 15) e.phone = 'Tulis nomor WhatsApp yang aktif, minimal 9 angka. Contoh: 0812 3456 7890.';
+  if (form.address.trim().length < 10) e.address = 'Tulis alamat lengkap: jalan, nomor rumah, RT/RW, dan kelurahan.';
+  return e;
+}
+function showErrors(e){
+  [['time', null], ['name', 'f-name'], ['phone', 'f-phone'], ['address', 'f-address']].forEach(([k, id]) => {
+    const p = document.getElementById('e-' + k);
+    p.hidden = !e[k]; p.textContent = e[k] || '';
+    if (id) { const inp = document.getElementById(id); if (e[k]) { inp.setAttribute('aria-invalid', 'true'); inp.setAttribute('aria-describedby', 'e-' + k); } else { inp.removeAttribute('aria-invalid'); inp.removeAttribute('aria-describedby'); } }
+  });
+}
+function buildOrder(){
+  const { s, base, adds, total } = calc();
+  const now = new Date();
+  const rnd = Math.random().toString(36).slice(2, 6).padEnd(4, 'x');
+  return {
+    id: 'o' + now.getTime().toString(36) + rnd,
+    code: 'RSK-' + pad(now.getDate()) + pad(now.getMonth() + 1) + '-' + Math.random().toString(36).slice(2, 5).padEnd(3, '7').toUpperCase(),
+    svc: s.id, svcName: s.name, qty: form.qty, unit: s.unit, workers: s.workers ? form.workers : 0,
+    qtyText: qtyText(s, form.qty, form.workers), base,
+    addons: adds.map(a => ({ id: a.id, name: a.name, price: a.price })), total,
+    date: form.date, time: form.time,
+    name: form.name.trim(), phone: form.phone.trim(), address: form.address.trim(), notes: form.notes.trim(),
+    pay: form.pay, status: 'menunggu', staff: '', createdAt: now.toISOString(), updatedAt: now.toISOString()
+  };
+}
+let submitting = false;
+async function submit(){
+  if (submitting) return;
+  const e = validate(); showErrors(e);
+  const first = ['time', 'name', 'phone', 'address'].find(k => e[k]);
+  if (first) {
+    const target = first === 'time' ? $('#slots') : document.getElementById('f-' + first);
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if (first !== 'time') setTimeout(() => target.focus({ preventScroll: true }), 300);
+    toast('Lengkapi data yang ditandai merah.');
+    return;
+  }
+  submitting = true;
+  const btns = [$('#submit-main'), $('#submit-bar')];
+  btns.forEach(b => { b.disabled = true; b.textContent = 'Menyimpan…'; });
+  const o = buildOrder();
+  try {
+    const where = await createOrder(o);
+    showSuccess(o, where);
+    form.notes = ''; $('#f-notes').value = '';
+    form.addons.clear(); renderDetail(); syncSteppers(); renderSummary();
+  } catch (err) {
+    console.warn(err); toast(errMsg(err, true));
+  } finally {
+    submitting = false;
+    btns.forEach(b => { b.disabled = false; b.textContent = 'Pesan sekarang'; });
+  }
+}
+let lastFocus = null;
+function showSuccess(o, where){
+  $('#ok-code').textContent = o.code;
+  $('#ok-lines').innerHTML = `
+    <div><span>Layanan</span><span>${esc(o.svcName)}, ${esc(o.qtyText)}</span></div>
+    <div><span>Jadwal</span><span>${fmtDateShort(o.date)} · ${esc(o.time)}</span></div>
+    <div><span>Total</span><span><b>${rp(o.total)}</b></span></div>`;
+  $('#ok-note').textContent = where === 'local'
+    ? 'Mode demo: pesanan ini hanya tersimpan di browser ini.'
+    : `Kami akan menghubungi ${o.phone} lewat WhatsApp untuk konfirmasi jadwal.`;
+  lastFocus = document.activeElement;
+  $('#ok').hidden = false;
+  $('#ok-mine').focus();
+}
+function closeSuccess(){ $('#ok').hidden = true; if (lastFocus && lastFocus.focus) try { lastFocus.focus({ preventScroll: true }); } catch (e) {} }
+
+/* ---------- Render: pesanan saya ---------- */
+function renderMine(){
+  const el = $('#mine-list');
+  if (!S.mineReady) { el.innerHTML = `<div class="empty"><p>Memuat pesanan…</p></div>`; return; }
+  const list = S.mine.filter(o => o && o.code).slice().sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+  if (!list.length) {
+    el.classList.remove('cols');
+    el.innerHTML = `<div class="empty"><div class="ico">${icon('list')}</div><h2>Belum ada pesanan</h2>
+      <p>Pesanan yang Anda buat akan muncul di sini, lengkap dengan status dan nama petugasnya.</p>
+      <button class="btn primary" type="button" data-nav="pesan">Pesan layanan</button></div>`;
+    return;
+  }
+  el.classList.add('cols');
+  el.innerHTML = list.map(mineCard).join('');
+}
+function mineCard(o){
+  const st = STATUS[o.status] || STATUS.menunggu;
+  const idx = FLOW.indexOf(o.status);
+  const addons = (o.addons || []).length ? ' + ' + o.addons.map(a => esc(a.name)).join(', ') : '';
+  const track = o.status === 'batal' ? '' : `
+    <div class="track" aria-hidden="true">${FLOW.map((f, i) => `<span class="${i <= idx ? 'on' : ''}"></span>`).join('')}</div>
+    <div class="track-labels" aria-hidden="true">${['Dipesan', 'Dikonfirmasi', 'Dikerjakan', 'Selesai'].map((l, i) => `<span class="${i === idx ? 'on' : ''}">${l}</span>`).join('')}</div>`;
+  let actions = '';
+  if (o.status === 'menunggu') {
+    actions = UI.confirm === 'mine:' + o.id
+      ? `<div class="confirm"><span>Batalkan pesanan ini?</span><button class="btn sm danger" type="button" data-act="mine-cancel-yes" data-oid="${esc(o.id)}">Ya, batalkan</button><button class="btn sm ghost" type="button" data-act="confirm-no">Tidak</button></div>`
+      : `<button class="btn sm ghost" type="button" data-act="mine-cancel" data-oid="${esc(o.id)}">Batalkan</button>`;
+  }
+  return `<article class="ocard">
+    <div class="o-top"><span class="code">${esc(o.code)}</span><span class="pill ${st.cls}">${st.label}</span></div>
+    <div><h3 class="o-title">${esc(o.svcName)}</h3><p class="o-sub">${esc(o.qtyText)}${addons}</p></div>
+    <ul class="meta">
+      <li>${icon('cal', 'sm')}<span>${fmtDate(o.date)} · pukul ${esc(o.time)}</span></li>
+      <li>${icon('pin', 'sm')}<span>${esc(o.address)}</span></li>
+      ${o.staff ? `<li>${icon('user', 'sm')}<span>Petugas: ${esc(o.staff)}</span></li>` : ''}
+    </ul>
+    ${track}
+    <div class="o-foot"><div><span class="o-total">${rp(o.total)}</span> <span class="o-pay">· ${payName(o.pay)}</span></div>${actions}</div>
+  </article>`;
+}
+
+/* ---------- Render: admin ---------- */
+let pointerDown = false;
+function adminEditing(){ const a = document.activeElement; return pointerDown || !!(a && a.matches && a.matches('#admin-body input')); }
+function focusSel(){
+  const a = document.activeElement;
+  if (!a || !a.dataset) return null;
+  const q = v => (window.CSS && CSS.escape) ? CSS.escape(v) : v;
+  if (a.dataset.filter) return `[data-filter="${q(a.dataset.filter)}"]`;
+  if (a.dataset.act && a.dataset.oid) return `[data-act="${q(a.dataset.act)}"][data-oid="${q(a.dataset.oid)}"]`;
+  return null;
+}
+function refocus(root, sel){ if (!sel) return; const el = root.querySelector(sel); if (el) el.focus({ preventScroll: true }); }
+function waLink(o){
+  let d = String(o.phone || '').replace(/\D/g, '');
+  if (!d) return '';
+  if (d.startsWith('0')) d = '62' + d.slice(1); else if (d.startsWith('8')) d = '62' + d;
+  const L = [`Halo ${o.name}, ini dari Resik.`, `Pesanan ${o.code}: ${o.svcName} (${o.qtyText})`, `Jadwal: ${fmtDate(o.date)}, pukul ${o.time}`];
+  if (o.staff) L.push(`Petugas: ${o.staff}`);
+  L.push(`Total: ${rp(o.total)}, bayar ${payName(o.pay).toLowerCase()}`);
+  const end = {
+    menunggu: 'Kami ingin memastikan detail pesanan sebelum mengonfirmasi jadwal.',
+    dikonfirmasi: 'Pesanan Anda sudah kami konfirmasi. Sampai jumpa!',
+    dikerjakan: 'Petugas kami sedang mengerjakan pesanan Anda.',
+    selesai: 'Pekerjaan sudah selesai. Terima kasih sudah memakai Resik!',
+    batal: 'Mohon maaf, pesanan ini kami batalkan.'
+  }[o.status];
+  if (end) L.push('', end);
+  return 'https://wa.me/' + d + '?text=' + encodeURIComponent(L.join('\n'));
+}
+function adminCard(o){
+  const st = STATUS[o.status] || STATUS.menunggu;
+  const today = ymd(new Date());
+  const late = ACTIVE.includes(o.status) && o.date < today;
+  const addons = (o.addons || []).length ? ' + ' + o.addons.map(a => esc(a.name)).join(', ') : '';
+  const conf = UI.confirm === 'adm:' + o.id;
+  const oid = esc(o.id);
+  let actions = '';
+  if (o.status === 'menunggu') {
+    actions = conf
+      ? `<div class="confirm"><span>Tolak pesanan ini?</span><button class="btn sm danger" type="button" data-act="adm-cancel-yes" data-oid="${oid}">Ya, tolak</button><button class="btn sm ghost" type="button" data-act="confirm-no">Tidak</button></div>`
+      : `<button class="btn sm primary" type="button" data-act="adm-confirm" data-oid="${oid}">Konfirmasi</button><button class="btn sm ghost" type="button" data-act="adm-cancel" data-oid="${oid}">Tolak</button>`;
+  } else if (o.status === 'dikonfirmasi') {
+    actions = conf
+      ? `<div class="confirm"><span>Batalkan pesanan ini?</span><button class="btn sm danger" type="button" data-act="adm-cancel-yes" data-oid="${oid}">Ya, batalkan</button><button class="btn sm ghost" type="button" data-act="confirm-no">Tidak</button></div>`
+      : `<button class="btn sm primary" type="button" data-act="adm-start" data-oid="${oid}">Mulai dikerjakan</button><button class="btn sm ghost" type="button" data-act="adm-cancel" data-oid="${oid}">Batalkan</button>`;
+  } else if (o.status === 'dikerjakan') {
+    actions = `<button class="btn sm primary" type="button" data-act="adm-done" data-oid="${oid}">Tandai selesai</button>`;
+  }
+  const wa = waLink(o);
+  const editable = ACTIVE.includes(o.status);
+  return `<article class="ocard">
+    <div class="a-top">
+      <span class="a-time">${esc(o.time)}</span>
+      <div><h3 class="o-title">${esc(o.svcName)}</h3><p class="o-sub">${esc(o.qtyText)}${addons}</p>${late ? '<span class="late">Lewat jadwal</span>' : ''}</div>
+      <span class="pill ${st.cls}">${st.label}</span>
+    </div>
+    <div class="a-who">
+      <div class="a-row">${icon('user', 'sm')}<span class="a-name">${esc(o.name)}</span><span class="sel">${esc(o.phone)}</span>
+        ${wa ? `<a class="a-wa" href="${esc(wa)}" target="_blank" rel="noopener noreferrer">${icon('chat', 'sm')}Chat WhatsApp</a>` : ''}</div>
+      <div class="a-row">${icon('pin', 'sm')}<span>${esc(o.address)}</span></div>
+      ${o.notes ? `<div class="a-notes">Catatan: ${esc(o.notes)}</div>` : ''}
+    </div>
+    ${editable ? `<div class="a-staff"><label for="staff-${oid}">Petugas yang ditugaskan</label><input class="input sm" id="staff-${oid}" data-staff="${oid}" value="${esc(o.staff || '')}" placeholder="Contoh: Bu Sri dan Mbak Dewi" autocomplete="off"></div>`
+      : (o.staff ? `<div class="a-notes">Petugas: ${esc(o.staff)}</div>` : '')}
+    <div class="o-foot"><div><span class="o-total">${rp(o.total)}</span> <span class="o-pay">· ${payName(o.pay)}</span></div><span class="code">${esc(o.code)}</span></div>
+    ${actions ? `<div class="a-actions">${actions}</div>` : ''}
+  </article>`;
+}
+function renderAdmin(){
+  const root = $('#admin-body');
+  if (!S.admin) { root.innerHTML = ''; return; }
+  if (adminEditing()) { UI.adminDirty = true; return; }
+  UI.adminDirty = false;
+  if (!S.allReady) { root.innerHTML = `<div class="empty"><p>Memuat pesanan…</p></div>`; return; }
+  const keep = root.contains(document.activeElement) ? focusSel() : null;
+  const all = S.all.filter(o => o && o.code);
+  const now = new Date(), today = ymd(now), month = today.slice(0, 7);
+  const count = f => all.filter(f).length;
+  const waiting = count(o => o.status === 'menunggu');
+  const todayJobs = count(o => o.date === today && o.status !== 'batal');
+  const revenue = all.filter(o => o.status === 'selesai' && String(o.date).startsWith(month)).reduce((a, o) => a + (o.total || 0), 0);
+  const filters = [
+    ['aktif', 'Aktif', count(o => ACTIVE.includes(o.status))],
+    ['menunggu', 'Menunggu', waiting],
+    ['selesai', 'Selesai', count(o => o.status === 'selesai')],
+    ['batal', 'Dibatalkan', count(o => o.status === 'batal')],
+    ['semua', 'Semua', all.length],
+  ];
+  const f = UI.filter;
+  const shown = all.filter(o => f === 'semua' ? true : f === 'aktif' ? ACTIVE.includes(o.status) : o.status === f);
+  const asc = f === 'aktif' || f === 'menunggu';
+  shown.sort((a, b) => { const k = String(a.date + a.time).localeCompare(String(b.date + b.time)); return asc ? k : -k; });
+
+  let groups = '', cur = null, buf = [];
+  const flush = () => { if (!buf.length) return; const rel = relDay(cur); groups += `<h2 class="day-h">${rel || fmtDate(cur)}${rel ? ` <small>${fmtDate(cur)}</small>` : ''} <small>· ${buf.length} pesanan</small></h2><div class="orders cols">${buf.join('')}</div>`; buf = []; };
+  shown.forEach(o => { if (o.date !== cur) { flush(); cur = o.date; } buf.push(adminCard(o)); });
+  flush();
+
+  const emptyText = all.length
+    ? `<div class="empty"><h2>Tidak ada pesanan di filter ini</h2><p>Pilih filter lain untuk melihat pesanan lainnya.</p></div>`
+    : `<div class="empty"><div class="ico">${icon('inbox')}</div><h2>Belum ada pesanan masuk</h2>
+       <p>Pesanan dari halaman Pesan akan muncul di sini secara langsung. Coba buat satu pesanan untuk melihat alurnya.</p>
+       <button class="btn primary" type="button" data-nav="pesan">Buat pesanan percobaan</button></div>`;
+
+  root.innerHTML = `
+    <div class="stats">
+      <div class="stat"><b>${waiting}</b><span>Menunggu konfirmasi</span></div>
+      <div class="stat"><b>${todayJobs}</b><span>Jadwal hari ini</span></div>
+      <div class="stat wide"><b>${rp(revenue)}</b><span>Pendapatan ${MON_L[now.getMonth()]} dari pesanan selesai</span></div>
+    </div>
+    <div class="chips" role="group" aria-label="Saring pesanan">${filters.map(([k, l, n]) => `<button type="button" class="chip sm" data-filter="${k}" aria-pressed="${f === k}">${l} <span class="price">${n}</span></button>`).join('')}</div>
+    ${shown.length ? groups : emptyText}`;
+  refocus(root, keep);
+}
+
+/* ---------- Tab, mode, badge ---------- */
+const VIEWS = ['pesan', 'pesanan', 'admin'];
+function setView(v){
+  if (!VIEWS.includes(v)) v = 'pesan';
+  if (v === 'admin' && !S.admin) v = 'pesan';
+  UI.view = v; UI.confirm = null;
+  VIEWS.forEach(x => {
+    $('#view-' + x).hidden = x !== v;
+    $('#tab-' + x).setAttribute('aria-selected', String(x === v));
+  });
+  $('#mbar').hidden = v !== 'pesan';
+  try { history.replaceState(null, '', '#' + v); } catch (e) {}
+  if (v === 'pesanan') renderMine();
+  if (v === 'admin') renderAdmin();
+  window.scrollTo(0, 0);
+}
+function badge(sel, n){ const b = $(sel); b.hidden = !n; b.textContent = n || ''; }
+function renderTabs(){
+  $('#tab-admin').hidden = !S.admin;
+  badge('#my-count', S.mine.filter(o => o && ACTIVE.includes(o.status)).length);
+  badge('#adm-count', S.admin ? S.all.filter(o => o && o.status === 'menunggu').length : 0);
+  if (UI.view === 'admin' && !S.admin) setView('pesan');
+}
+function renderMode(){
+  const n = $('#mode-note');
+  if (S.mode === 'local') {
+    n.hidden = false;
+    $('#mode-text').textContent = 'Mode demo: pesanan hanya tersimpan di browser ini.';
+  } else n.hidden = true;
+}
+function renderAllData(){ renderMode(); renderTabs(); renderMine(); renderAdmin(); }
+
+/* ---------- Event ---------- */
+document.addEventListener('click', async ev => {
+  const nav = ev.target.closest('[data-nav]');
+  if (nav) { ev.preventDefault(); setView(nav.dataset.nav); return; }
+
+  const svc = ev.target.closest('[data-svc]');
+  if (svc) {
+    if (form.svc === svc.dataset.svc) return;
+    const s = svcById(svc.dataset.svc);
+    form.svc = s.id; form.qty = s.def; form.workers = 1;
+    form.addons.forEach(id => { const a = addonById(id); if (!a || !a.for.includes(s.id)) form.addons.delete(id); });
+    setPressed('#services [data-svc]', 'data-svc', s.id);
+    renderDetail(); renderSummary();
+    return;
+  }
+  const st = ev.target.closest('[data-step]');
+  if (st && !st.disabled) {
+    const s = svcById(form.svc);
+    if (st.dataset.target === 'qty') {
+      const step = s.step || 1;
+      let v = form.qty + (+st.dataset.step) * step;
+      if (step > 1) v = +st.dataset.step > 0 ? Math.floor(form.qty / step) * step + step : Math.ceil(form.qty / step) * step - step;
+      setQty(v);
+    } else {
+      form.workers = Math.min(4, Math.max(1, form.workers + (+st.dataset.step)));
+      syncSteppers(); renderSummary();
+    }
+    return;
+  }
+  const q = ev.target.closest('[data-quick]');
+  if (q) { setQty(+q.dataset.quick); return; }
+  const ad = ev.target.closest('[data-addon]');
+  if (ad) {
+    const id = ad.dataset.addon;
+    form.addons.has(id) ? form.addons.delete(id) : form.addons.add(id);
+    ad.setAttribute('aria-pressed', String(form.addons.has(id)));
+    renderSummary(); return;
+  }
+  const dt = ev.target.closest('[data-date]');
+  if (dt) { form.date = dt.dataset.date; setPressed('#dates [data-date]', 'data-date', form.date); renderSlots(); renderSummary(); return; }
+  const sl = ev.target.closest('[data-slot]');
+  if (sl && !sl.disabled) { form.time = sl.dataset.slot; setPressed('#slots [data-slot]', 'data-slot', form.time); $('#e-time').hidden = true; renderSummary(); return; }
+  const py = ev.target.closest('[data-pay]');
+  if (py) { form.pay = py.dataset.pay; setPressed('#pays [data-pay]', 'data-pay', form.pay); renderSummary(); return; }
+  const fl = ev.target.closest('[data-filter]');
+  if (fl) { UI.filter = fl.dataset.filter; UI.confirm = null; renderAdmin(); return; }
+
+  const act = ev.target.closest('[data-act]');
+  if (!act) return;
+  const a = act.dataset.act, oid = act.dataset.oid;
+  if (a === 'confirm-no') { UI.confirm = null; renderMine(); renderAdmin(); return; }
+  if (a === 'mine-cancel') { UI.confirm = 'mine:' + oid; renderMine(); refocus($('#mine-list'), `[data-act="mine-cancel-yes"]`); return; }
+  if (a === 'adm-cancel') { UI.confirm = 'adm:' + oid; pointerDown = false; renderAdmin(); refocus($('#admin-body'), `[data-act="adm-cancel-yes"]`); return; }
+  const pool = a.startsWith('mine') ? S.mine : S.all;
+  const o = pool.find(x => x && x.id === oid);
+  if (!o) return;
+  let patch = null, msg = '';
+  if (a === 'mine-cancel-yes' || a === 'adm-cancel-yes') { patch = { status: 'batal' }; msg = 'Pesanan dibatalkan.'; }
+  else if (a === 'adm-confirm') { patch = { status: 'dikonfirmasi' }; msg = 'Pesanan dikonfirmasi. Kabari pelanggan lewat WhatsApp.'; }
+  else if (a === 'adm-start') { patch = { status: 'dikerjakan' }; msg = 'Status: sedang dikerjakan.'; }
+  else if (a === 'adm-done') { patch = { status: 'selesai' }; msg = 'Pesanan selesai.'; }
+  if (!patch) return;
+  if (a.startsWith('adm')) {
+    const inp = document.getElementById('staff-' + oid);
+    if (inp && inp.value.trim() !== (o.staff || '')) patch.staff = inp.value.trim();
+  }
+  UI.confirm = null;
+  act.disabled = true;
+  try { await updateOrder(o, patch); toast(msg); }
+  catch (e) { console.warn(e); toast(errMsg(e, false)); act.disabled = false; }
+});
+
+document.addEventListener('change', async ev => {
+  const t = ev.target;
+  if (t.id === 'qty') { setQty(t.value); t.value = form.qty; return; }
+  if (t.id === 'workers') { const v = Math.round(+t.value); form.workers = Math.min(4, Math.max(1, isFinite(v) ? v : 1)); t.value = form.workers; syncSteppers(); renderSummary(); return; }
+  if (t.dataset && t.dataset.staff) {
+    const o = S.all.find(x => x && x.id === t.dataset.staff);
+    const v = t.value.trim();
+    if (!o || v === (o.staff || '')) return;
+    try { await updateOrder(o, { staff: v }); toast(v ? 'Petugas disimpan.' : 'Petugas dikosongkan.'); }
+    catch (e) { console.warn(e); toast(errMsg(e, false)); }
+  }
+});
+document.addEventListener('input', ev => {
+  const t = ev.target;
+  if (t.id === 'qty') { const v = Math.round(+t.value); const s = svcById(form.svc); if (isFinite(v) && v >= s.min && v <= s.max) { form.qty = v; syncSteppers(); renderSummary(); } return; }
+  const map = { 'f-name':'name', 'f-phone':'phone', 'f-address':'address', 'f-notes':'notes' };
+  if (map[t.id]) {
+    form[map[t.id]] = t.value;
+    if (t.getAttribute('aria-invalid')) { t.removeAttribute('aria-invalid'); const p = $('#e-' + map[t.id]); if (p) p.hidden = true; }
+    if (t.id !== 'f-notes') lsSet(LS_CONTACT, { name: form.name, phone: form.phone, address: form.address });
+  }
+});
+document.addEventListener('keydown', ev => {
+  if (ev.key === 'Enter' && ev.target && (ev.target.id === 'qty' || ev.target.id === 'workers')) { ev.preventDefault(); ev.target.blur(); }
+  if (ev.key === 'Escape' && !$('#ok').hidden) closeSuccess();
+});
+const flushAdmin = () => setTimeout(() => { if (UI.adminDirty && !adminEditing()) renderAdmin(); }, 0);
+document.addEventListener('pointerdown', () => { pointerDown = true; }, true);
+document.addEventListener('pointerup', () => { pointerDown = false; flushAdmin(); }, true);
+document.addEventListener('pointercancel', () => { pointerDown = false; flushAdmin(); }, true);
+document.addEventListener('focusout', flushAdmin);
+
+$('#booking').addEventListener('submit', ev => { ev.preventDefault(); submit(); });
+$('#ok-close').addEventListener('click', closeSuccess);
+$('#ok-mine').addEventListener('click', () => { closeSuccess(); setView('pesanan'); });
+$('#ok').addEventListener('click', ev => { if (ev.target.id === 'ok') closeSuccess(); });
+
+/* ---------- Mulai ---------- */
+$('#f-name').value = form.name; $('#f-phone').value = form.phone; $('#f-address').value = form.address;
+renderServices(); renderDetail(); renderDates(); renderSlots(); renderPays(); renderSummary();
+renderMine(); renderTabs();
+S.ready = initStore().catch(e => { console.warn(e); goLocal(); });
+const startView = (location.hash || '').replace('#', '');
+setView(startView === 'admin' ? 'pesan' : startView);
+if (startView === 'admin') S.ready.then(() => { if (S.admin) setView('admin'); });
+})();
+</script>
+
+</body></html>
